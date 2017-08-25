@@ -1,0 +1,29 @@
+
+<html>
+    <head>
+        
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+     <script>
+
+            function texto()
+            {
+                if ((event.keyCode != 32) && (event.keyCode < 65) || (event.keyCode > 90) && (event.keyCode < 97) || (event.keyCode > 122))
+                    event.returnValue = false;
+
+            }
+
+</script>
+    <body>
+        <div>TODO write content</div>
+        <form name="formulario" method="post" action="JSPFormulario.jsp">
+            <input type="text" placeholder="nombre" name="nombreA"  onkeypress="texto()" id="nombreA" required>
+            <input type="text" placeholder="ApellidoPA" name="paterno" onkeypress="texto()" id="paterno" required>
+            <input type="text" placeholder="ApellidoMa" name="materno" onkeypress="texto()"  id="materno" required>
+            <input type="text" placeholder="Escuela" name="escuela" id="escuela" required>
+            <input type="submit" name="button " id="button">
+        </form>
+    </body>
+</html>
